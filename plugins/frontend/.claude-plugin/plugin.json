@@ -1,0 +1,21 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Use when adding or changing a feature, page, API call, hook, form, or component in a React or Next.js app laid out as infrastructure + domain + view + routes; when deciding which layer code belongs in; when reviewing a diff for layering violations; or when structuring a greenfield frontend. Covers dependency rules, naming, serialization boundaries, and typed errors.",
+  "author": {
+    "name": "João Vogler",
+    "url": "https://github.com/jv-vogler"
+  },
+  "homepage": "https://github.com/jv-vogler/skills",
+  "repository": "https://github.com/jv-vogler/skills",
+  "license": "MIT",
+  "keywords": [
+    "frontend",
+    "architecture",
+    "react",
+    "nextjs",
+    "typescript",
+    "clean-architecture"
+  ],
+  "skills": "./skills/"
+}

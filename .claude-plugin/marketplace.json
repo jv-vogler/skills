@@ -1,0 +1,71 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "jv-vogler",
+  "owner": {
+    "name": "João Vogler",
+    "url": "https://github.com/jv-vogler"
+  },
+  "metadata": {
+    "description": "Personal Claude Code skills by João Vogler — code review, PR workflow, planning, writing, and frontend architecture.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "frontend",
+      "source": "./plugins/frontend",
+      "description": "Use when adding or changing a feature, page, API call, hook, form, or component in a React or Next.js app laid out as infrastructure + domain + view + routes; when deciding which layer code belongs in; when reviewing a diff for layering violations; or when structuring a greenfield frontend. Covers dependency rules, naming, serialization boundaries, and typed errors.",
+      "version": "1.0.0",
+      "category": "developer-tools",
+      "keywords": [
+        "frontend",
+        "architecture",
+        "react",
+        "nextjs",
+        "typescript",
+        "clean-architecture"
+      ]
+    },
+    {
+      "name": "plan",
+      "source": "./plugins/plan",
+      "description": "Use when planning a new feature, refactor, package upgrade, migration, or design, architecture, or infrastructure change — and when executing the resulting plan. `plan:write` produces a phased plan file with explicit requirements, alternatives, and tests; `plan:execute` runs one phase, a span, or the whole plan under code writing standards, marking tasks complete and committing each phase.",
+      "version": "1.0.0",
+      "category": "developer-tools",
+      "keywords": [
+        "planning",
+        "implementation-plan",
+        "architecture",
+        "refactoring",
+        "specification"
+      ]
+    },
+    {
+      "name": "pr",
+      "source": "./plugins/pr",
+      "description": "Use when working a pull request end to end: reviewing a diff locally for real bugs and design problems without posting anything to GitHub, and writing a PR description that explains why the change exists instead of narrating the diff file by file.",
+      "version": "1.0.0",
+      "category": "developer-tools",
+      "keywords": [
+        "pull-request",
+        "code-review",
+        "diff-review",
+        "github",
+        "git"
+      ]
+    },
+    {
+      "name": "writing",
+      "source": "./plugins/writing",
+      "description": "Use when editing or reviewing prose to strip the signs of AI-generated writing and make it read as human-written. Based on Wikipedia's \"Signs of AI writing\" guide: inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary, passive voice, negative parallelisms, and filler phrases.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": [
+        "writing",
+        "editing",
+        "prose",
+        "style",
+        "ai-detection"
+      ]
+    }
+  ]
+}

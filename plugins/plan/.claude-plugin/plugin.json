@@ -1,0 +1,20 @@
+{
+  "name": "plan",
+  "version": "1.0.0",
+  "description": "Use when planning a new feature, refactor, package upgrade, migration, or design, architecture, or infrastructure change — and when executing the resulting plan. `plan:write` produces a phased plan file with explicit requirements, alternatives, and tests; `plan:execute` runs one phase, a span, or the whole plan under code writing standards, marking tasks complete and committing each phase.",
+  "author": {
+    "name": "João Vogler",
+    "url": "https://github.com/jv-vogler"
+  },
+  "homepage": "https://github.com/jv-vogler/skills",
+  "repository": "https://github.com/jv-vogler/skills",
+  "license": "MIT",
+  "keywords": [
+    "planning",
+    "implementation-plan",
+    "architecture",
+    "refactoring",
+    "specification"
+  ],
+  "skills": "./skills/"
+}

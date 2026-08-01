@@ -1,0 +1,20 @@
+{
+  "name": "pr",
+  "version": "1.0.0",
+  "description": "Use when working a pull request end to end: reviewing a diff locally for real bugs and design problems without posting anything to GitHub, and writing a PR description that explains why the change exists instead of narrating the diff file by file.",
+  "author": {
+    "name": "João Vogler",
+    "url": "https://github.com/jv-vogler"
+  },
+  "homepage": "https://github.com/jv-vogler/skills",
+  "repository": "https://github.com/jv-vogler/skills",
+  "license": "MIT",
+  "keywords": [
+    "pull-request",
+    "code-review",
+    "diff-review",
+    "github",
+    "git"
+  ],
+  "skills": "./skills/"
+}

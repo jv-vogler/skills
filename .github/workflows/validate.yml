@@ -1,0 +1,51 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      # Schema gate. Verified to run without authentication or repository state.
+      - name: Validate manifests
+        id: official
+        continue-on-error: false
+        run: claude plugin validate . --strict
+
+      # Repo invariants the schema cannot express (CHK-001 … CHK-010).
+      - name: Check repo consistency
+        run: node scripts/check-repo.mjs
+
+  guard-private-strings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # SEC-001. This duplicates check-repo.mjs CHK-010 on purpose: an independent gate
+      # still fires if that script is weakened. The needles are assembled from fragments
+      # so this file holds none of them literally and cannot match itself.
+      - name: Scan tracked files for private strings
+        run: |
+          v='vogler'; c='code'; m='miner'
+          needles="/home/j${v}|jvs${v}@gmail\.com|joao\.${v}@${c}${m}42\.com|${c}${m}"
+          if git grep -nIE "$needles" -- .; then
+            echo "::error::Tracked files contain private strings (SEC-001). See matches above."
+            exit 1
+          fi
+          echo "No private strings found in tracked files."

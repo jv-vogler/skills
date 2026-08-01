@@ -1,0 +1,14 @@
+{
+  "name": "jv-vogler-skills",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "validate": "claude plugin validate . --strict",
+    "check": "node scripts/check-repo.mjs",
+    "readme": "node scripts/gen-readme.mjs",
+    "test": "npm run validate && npm run check",
+    "bump": "node scripts/bump-version.mjs",
+    "release": "npm test && node scripts/gen-readme.mjs"
+  }
+}
