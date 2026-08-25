@@ -1,0 +1,20 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "Use when writing or landing code — implementing a feature, fixing a bug, refactoring, or migrating. `code:implement` carries the standard for how code gets written (naming, control flow, comments, constants, purity) plus choosing a branch, verifying the change before calling it done, and splitting the work into atomic commits with a message that matches the repository.",
+  "author": {
+    "name": "João Vogler",
+    "url": "https://github.com/jv-vogler"
+  },
+  "homepage": "https://github.com/jv-vogler/skills",
+  "repository": "https://github.com/jv-vogler/skills",
+  "license": "MIT",
+  "keywords": [
+    "code-quality",
+    "conventions",
+    "commits",
+    "git",
+    "refactoring"
+  ],
+  "skills": "./skills/"
+}

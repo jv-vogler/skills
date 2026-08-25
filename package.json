@@ -2,7 +2,7 @@
   "name": "jv-vogler-skills",
   "private": true,
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "validate": "claude plugin validate . --strict",
     "check": "node scripts/check-repo.mjs",

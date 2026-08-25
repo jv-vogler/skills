@@ -6,10 +6,24 @@
     "url": "https://github.com/jv-vogler"
   },
   "metadata": {
-    "description": "Personal Claude Code skills by João Vogler — code review, PR workflow, planning, writing, and frontend architecture.",
-    "version": "1.0.0"
+    "description": "Personal Claude Code skills by João Vogler — code standards, code review, PR workflow, planning, writing, and frontend architecture.",
+    "version": "1.1.0"
   },
   "plugins": [
+    {
+      "name": "code",
+      "source": "./plugins/code",
+      "description": "Use when writing or landing code — implementing a feature, fixing a bug, refactoring, or migrating. `code:implement` carries the standard for how code gets written (naming, control flow, comments, constants, purity) plus choosing a branch, verifying the change before calling it done, and splitting the work into atomic commits with a message that matches the repository.",
+      "version": "1.0.0",
+      "category": "developer-tools",
+      "keywords": [
+        "code-quality",
+        "conventions",
+        "commits",
+        "git",
+        "refactoring"
+      ]
+    },
     {
       "name": "frontend",
       "source": "./plugins/frontend",
@@ -28,8 +42,8 @@
     {
       "name": "plan",
       "source": "./plugins/plan",
-      "description": "Use when planning a new feature, refactor, package upgrade, migration, or design, architecture, or infrastructure change — and when executing the resulting plan. `plan:write` produces a phased plan file with explicit requirements, alternatives, and tests; `plan:execute` runs one phase, a span, or the whole plan under code writing standards, marking tasks complete and committing each phase.",
-      "version": "1.0.0",
+      "description": "Use when planning a new feature, refactor, package upgrade, migration, or design, architecture, or infrastructure change — and when executing the resulting plan. `plan:write` produces a phased plan file with explicit requirements, alternatives, and tests; `plan:execute` runs one phase, a span, or the whole plan under `code:implement`, marking tasks complete and committing each phase.",
+      "version": "1.1.0",
       "category": "developer-tools",
       "keywords": [
         "planning",

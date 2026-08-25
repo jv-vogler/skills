@@ -16,8 +16,8 @@ changes.
 Executes a plan written by `plan:write`. Resolves scope from the request — one named phase, a
 bounded span (`up to phase 3`), or the whole plan — then verifies the plan's structure, asks once
 whether the work goes on a new branch or the current one, works through each phase's tasks under
-a set of code writing standards, marks tasks complete in the plan file as they land, and commits
-each phase as a single reviewable unit. Halts on the first unmet goal or failing test.
+`code:implement`, marks tasks complete in the plan file as they land, and commits each phase as a
+reviewable unit. Halts on the first unmet goal or failing test.
 
 ## Install
 
