@@ -24,7 +24,6 @@ claude plugin install <plugin>@jv-vogler
 | ------ | ------- | -------- | ------------ |
 | [`code`](./plugins/code) | 1.0.0 | developer-tools | Use when writing or landing code — implementing a feature, fixing a bug, refactoring, or migrating. `code:implement` carries the standard for how code gets written (naming… |
 | [`frontend`](./plugins/frontend) | 1.0.0 | developer-tools | Use when adding or changing a feature, page, API call, hook, form, or component in a React or Next.js app laid out as infrastructure + domain + view + routes; when deciding which… |
-| [`plan`](./plugins/plan) | 1.1.0 | developer-tools | Use when planning a new feature, refactor, package upgrade, migration, or design, architecture, or infrastructure change — and when executing the resulting plan. `plan:write`… |
 | [`pr`](./plugins/pr) | 1.0.0 | developer-tools | Use when working a pull request end to end: reviewing a diff locally for real bugs and design problems without posting anything to GitHub, and writing a PR description that… |
 | [`writing`](./plugins/writing) | 1.0.0 | productivity | Use when editing or reviewing prose to strip the signs of AI-generated writing and make it read as human-written. Based on Wikipedia's "Signs of AI writing" guide: inflated… |
 

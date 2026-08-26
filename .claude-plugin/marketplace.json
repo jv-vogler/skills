@@ -6,8 +6,8 @@
     "url": "https://github.com/jv-vogler"
   },
   "metadata": {
-    "description": "Personal Claude Code skills by João Vogler — code standards, code review, PR workflow, planning, writing, and frontend architecture.",
-    "version": "1.1.0"
+    "description": "Personal Claude Code skills by João Vogler — code standards, code review, PR workflow, writing, and frontend architecture.",
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -37,20 +37,6 @@
         "nextjs",
         "typescript",
         "clean-architecture"
-      ]
-    },
-    {
-      "name": "plan",
-      "source": "./plugins/plan",
-      "description": "Use when planning a new feature, refactor, package upgrade, migration, or design, architecture, or infrastructure change — and when executing the resulting plan. `plan:write` produces a phased plan file with explicit requirements, alternatives, and tests; `plan:execute` runs one phase, a span, or the whole plan under `code:implement`, marking tasks complete and committing each phase.",
-      "version": "1.1.0",
-      "category": "developer-tools",
-      "keywords": [
-        "planning",
-        "implementation-plan",
-        "architecture",
-        "refactoring",
-        "specification"
       ]
     },
     {

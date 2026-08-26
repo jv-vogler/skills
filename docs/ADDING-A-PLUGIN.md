@@ -3,9 +3,9 @@
 `.claude-plugin/marketplace.json` is the single source of truth. The README table, the
 consistency checker, and the version bumper all derive from it.
 
-Skills are grouped into themed plugins (`pr`, `plan`, `writing`, `frontend`) because installed
+Skills are grouped into themed plugins (`code`, `pr`, `writing`, `frontend`) because installed
 skills are addressed as `plugin:skill`. The group carries the object, so skill names stay short
-verbs — `pr:local-review`, `plan:execute` — and a plugin never shares a name with a skill inside
+verbs — `pr:local-review`, `code:implement` — and a plugin never shares a name with a skill inside
 it (`humanize` lives in `writing`, not in a plugin called `humanize`). Prefer adding a skill to
 an existing group over creating a new plugin.
 
